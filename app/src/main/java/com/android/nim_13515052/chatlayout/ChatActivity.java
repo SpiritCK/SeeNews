@@ -25,6 +25,7 @@ public class ChatActivity extends ActionBarActivity {
     private Button sendBtn;
     private ChatAdapter adapter;
     private ArrayList<ChatMessage> chatHistory;
+    private int getFavorite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,8 @@ public class ChatActivity extends ActionBarActivity {
         messageET = (EditText) findViewById(R.id.messageEdit);
         sendBtn = (Button) findViewById(R.id.chatSendButton);
 
+        getFavorite = 0;
+
         RelativeLayout container = (RelativeLayout) findViewById(R.id.container);
 
         loadDummyHistory();
@@ -89,8 +92,44 @@ public class ChatActivity extends ActionBarActivity {
                     public void run() {
                         ChatMessage chatMessage = new ChatMessage();
                         chatMessage.setId(3);//dummy
-                        if (msg.toLowerCase().equals("hello")) {
+                        if (msg.toLowerCase().matches("^hello(.*)")) {
                             chatMessage.setMessage("Hello, how can I help you?");
+                        }
+                        else if (msg.toLowerCase().matches("(.*)tell(.*)about pernikahan putri jokowi")) {
+                            chatMessage.setMessage(getString(R.string.case1));
+
+                            if(getFavorite == 0) {
+                                (new Handler()).postDelayed(new Runnable() {
+
+                                    @Override
+                                    public void run() {
+                                        ChatMessage chatMessage = new ChatMessage();
+                                        chatMessage.setId(3);//dummy
+                                        chatMessage.setMessage(getString(R.string.recommend));
+                                        chatMessage.setDate(DateFormat.getDateTimeInstance().format(new Date()));
+                                        chatMessage.setMe(false);
+                                        displayMessage(chatMessage);
+                                        getFavorite = 1;
+                                    }
+                                }, 60000);
+                            }
+                        }
+                        else if (msg.toLowerCase().matches("(.*)show(.*)popular(.*)")) {
+                            chatMessage.setMessage(getString(R.string.case2));
+                        }
+                        else if (msg.toLowerCase().matches("(.*)yes(.*)") && getFavorite == 1) {
+                            chatMessage.setMessage(getString(R.string.case3));
+                        }
+                        else if (msg.toLowerCase().matches("(.*)more(.*)") && getFavorite == 1) {
+                            chatMessage.setMessage(getString(R.string.case4));
+                            getFavorite = 0;
+                        }
+                        else if (msg.toLowerCase().matches("(.*)no(.*)") && getFavorite == 1) {
+                            chatMessage.setMessage("OK then");
+                            getFavorite = 0;
+                        }
+                        else if (msg.toLowerCase().matches("thank (u|you)(.*)")) {
+                            chatMessage.setMessage("You're welcome :)");
                         }
                         else {
                             chatMessage.setMessage("I'm sorry, I can't respond to that");

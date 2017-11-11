@@ -26,6 +26,7 @@ public class ChatActivity extends ActionBarActivity {
     private ChatAdapter adapter;
     private ArrayList<ChatMessage> chatHistory;
     private int getFavorite;
+    private int favoriteLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,7 @@ public class ChatActivity extends ActionBarActivity {
         sendBtn = (Button) findViewById(R.id.chatSendButton);
 
         getFavorite = 0;
+        favoriteLink = 0;
 
         RelativeLayout container = (RelativeLayout) findViewById(R.id.container);
 
@@ -95,7 +97,7 @@ public class ChatActivity extends ActionBarActivity {
                         if (msg.toLowerCase().matches("^hello(.*)")) {
                             chatMessage.setMessage("Hello, how can I help you?");
                         }
-                        else if (msg.toLowerCase().matches("(.*)tell(.*)about pernikahan putri jokowi")) {
+                        else if (msg.toLowerCase().matches("(.*)tell(.*)about pernikahan putri jokowi(.*)")) {
                             chatMessage.setMessage(getString(R.string.case1));
 
                             if(getFavorite == 0) {
@@ -111,22 +113,39 @@ public class ChatActivity extends ActionBarActivity {
                                         displayMessage(chatMessage);
                                         getFavorite = 1;
                                     }
-                                }, 60000);
+                                }, 45000);
                             }
                         }
                         else if (msg.toLowerCase().matches("(.*)show(.*)popular(.*)")) {
                             chatMessage.setMessage(getString(R.string.case2));
                         }
                         else if (msg.toLowerCase().matches("(.*)yes(.*)") && getFavorite == 1) {
-                            chatMessage.setMessage(getString(R.string.case3));
+                            chatMessage.setMessage(getString(R.string.case3a));
                         }
                         else if (msg.toLowerCase().matches("(.*)more(.*)") && getFavorite == 1) {
-                            chatMessage.setMessage(getString(R.string.case4));
+                            chatMessage.setMessage(getString(R.string.case3b));
                             getFavorite = 0;
                         }
                         else if (msg.toLowerCase().matches("(.*)no(.*)") && getFavorite == 1) {
                             chatMessage.setMessage("OK then");
                             getFavorite = 0;
+                        }
+                        else if (msg.toLowerCase().matches("(.*)search(.*)about thor: ragnarok(.*)")) {
+                            chatMessage.setMessage(getString(R.string.case4));
+                        }
+                        else if (msg.toLowerCase().matches("(.*)tell(.*)about timnas indonesia(.*)")) {
+                            if (favoriteLink == 1) {
+                                chatMessage.setMessage(getString(R.string.case6a));
+                            }
+                            else {
+                                chatMessage.setMessage(getString(R.string.case6b));
+                            }
+                        }
+                        else if (msg.toLowerCase().matches("(.*)yes(.*)")) {
+                            chatMessage.setMessage(getString(R.string.case3));
+                        }
+                        else if (msg.toLowerCase().matches("(.*)yes(.*)")) {
+                            chatMessage.setMessage(getString(R.string.case3));
                         }
                         else if (msg.toLowerCase().matches("thank (u|you)(.*)")) {
                             chatMessage.setMessage("You're welcome :)");
@@ -143,6 +162,18 @@ public class ChatActivity extends ActionBarActivity {
         });
 
 
+        (new Handler()).postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                ChatMessage chatMessage = new ChatMessage();
+                chatMessage.setId(3);//dummy
+                chatMessage.setMessage(getString(R.string.case6c));
+                chatMessage.setDate(DateFormat.getDateTimeInstance().format(new Date()));
+                chatMessage.setMe(false);
+                displayMessage(chatMessage);
+            }
+        }, 60000);
     }
 
     public void displayMessage(ChatMessage message) {

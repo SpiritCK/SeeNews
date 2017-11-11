@@ -1,6 +1,7 @@
 package com.android.nim_13515052.chatlayout;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -77,9 +78,28 @@ public class ChatActivity extends ActionBarActivity {
                 chatMessage.setDate(DateFormat.getDateTimeInstance().format(new Date()));
                 chatMessage.setMe(true);
 
+                final String msg = messageET.getText().toString();
                 messageET.setText("");
 
                 displayMessage(chatMessage);
+
+                (new Handler()).postDelayed(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        ChatMessage chatMessage = new ChatMessage();
+                        chatMessage.setId(3);//dummy
+                        if (msg.toLowerCase().equals("hello")) {
+                            chatMessage.setMessage("Hello, how can I help you?");
+                        }
+                        else {
+                            chatMessage.setMessage("I'm sorry, I can't respond to that");
+                        }
+                        chatMessage.setDate(DateFormat.getDateTimeInstance().format(new Date()));
+                        chatMessage.setMe(false);
+                        displayMessage(chatMessage);
+                    }
+                }, 1000);
             }
         });
 
@@ -103,13 +123,13 @@ public class ChatActivity extends ActionBarActivity {
         ChatMessage msg = new ChatMessage();
         msg.setId(1);
         msg.setMe(false);
-        msg.setMessage("Hi");
+        msg.setMessage("Hello, I am SeeNews bot.");
         msg.setDate(DateFormat.getDateTimeInstance().format(new Date()));
         chatHistory.add(msg);
         ChatMessage msg1 = new ChatMessage();
         msg1.setId(2);
         msg1.setMe(false);
-        msg1.setMessage("How r u doing???");
+        msg1.setMessage("How can I help you?");
         msg1.setDate(DateFormat.getDateTimeInstance().format(new Date()));
         chatHistory.add(msg1);
 

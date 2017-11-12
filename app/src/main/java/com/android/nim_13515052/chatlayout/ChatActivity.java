@@ -28,6 +28,9 @@ public class ChatActivity extends ActionBarActivity {
     private ArrayList<ChatMessage> chatHistory;
     private int getFavorite;
     private int favoriteLink;
+    private int preferenceLink;
+    private int unpreferenceLink;
+    private int favoriteTopic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +70,10 @@ public class ChatActivity extends ActionBarActivity {
 
         getFavorite = 0;
         favoriteLink = 0;
+        preferenceLink = 0;
+        unpreferenceLink = 0;
+        favoriteTopic = 0;
+
 
         RelativeLayout container = (RelativeLayout) findViewById(R.id.container);
 
@@ -144,11 +151,41 @@ public class ChatActivity extends ActionBarActivity {
                                 chatMessage.setMessage(getString(R.string.case6b));
                             }
                         }
-                        else if (msg.toLowerCase().matches("(.*)yes(.*)")) {
-                            chatMessage.setMessage(getString(R.string.case3));
+                        else if (msg.toLowerCase().matches("(.*)prefer(.*)from detik.com")) {
+                            chatMessage.setMessage(getString(R.string.case7b));
+                            preferenceLink = 1;
                         }
-                        else if (msg.toLowerCase().matches("(.*)yes(.*)")) {
-                            chatMessage.setMessage(getString(R.string.case3));
+                        else if (msg.toLowerCase().matches("(.*)tell(.*)about bandung(.*)")) {
+                            if (preferenceLink == 0) {
+                                chatMessage.setMessage(getString(R.string.case7a));
+                            }
+                            else {
+                                chatMessage.setMessage(getString(R.string.case7c));
+                            }
+                        }
+                        else if (msg.toLowerCase().matches("(.*)(block|)(.*)about sandiaga uno(.*)(block|)(.*)")) {
+                            chatMessage.setMessage(getString(R.string.case8b));
+                            unpreferenceLink = 1;
+                        }
+                        else if (msg.toLowerCase().matches("(.*)search(.*)about jakarta(.*)")) {
+                            if (unpreferenceLink == 0) {
+                                chatMessage.setMessage(getString(R.string.case8a));
+                            }
+                            else {
+                                chatMessage.setMessage(getString(R.string.case8c));
+                            }
+                        }
+                        else if (msg.toLowerCase().matches("(.*)like(.*)(about|) raisa(.*)")) {
+                            chatMessage.setMessage(getString(R.string.case10c));
+                            favoriteTopic = 1;
+                        }
+                        else if (msg.toLowerCase().matches("(.*)tell(.*)some news(.*)")) {
+                            if(favoriteTopic == 0) {
+                                chatMessage.setMessage(getString(R.string.case10b));
+                            }
+                            else {
+                                chatMessage.setMessage(getString(R.string.case10a));
+                            }
                         }
                         else if (msg.toLowerCase().matches("thank (u|you)(.*)")) {
                             chatMessage.setMessage("You're welcome :)");
@@ -176,7 +213,7 @@ public class ChatActivity extends ActionBarActivity {
                 chatMessage.setMe(false);
                 displayMessage(chatMessage);
             }
-        }, 60000);
+        }, 300000);
     }
 
     public void displayMessage(ChatMessage message) {
@@ -196,7 +233,7 @@ public class ChatActivity extends ActionBarActivity {
         ChatMessage msg = new ChatMessage();
         msg.setId(1);
         msg.setMe(false);
-        msg.setMessage("Hello, I am SeeNews bot.");
+        msg.setMessage(getString(R.string.tutorial));
         msg.setDate(DateFormat.getDateTimeInstance().format(new Date()));
         chatHistory.add(msg);
         ChatMessage msg1 = new ChatMessage();

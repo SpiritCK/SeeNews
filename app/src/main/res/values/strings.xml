@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ChatLayoutExample</string>
+    <string name="app_name">SeeNews</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -100,14 +100,105 @@
     <string name="case3b">you can open this link
 \nhttps://finance.detik.com/berita-ekonomi-bisnis/d-3723273/jokowi-gencar-bangun-infrastruktur-dikritik-ini-respons-menteri-pupr</string>
     <string name="recommend">Hei friend, I see you are interested about president Jokowi, do you want to know the latest news about him?</string>
-    <string name="case4">asd</string>
-    <string name="case6a">asd</string>
-    <string name="case6b">asd</string>
+    <string name="case4">Disney-Marvel’s “Thor: Ragnarok” is still booming at the box office with a projected $63 million at 4,038 North American sites in its second weekend, early estimates showed Friday.
+
+\n\nFox’s detective drama “Murder on the Orient Express” is leading the rest of the pack with about $25 million at 3,341 locations, while Paramount’s family comedy “Daddy’s Home 2” will wind up with about $21 million at 3,575 venues. Both new entries are performing within expectations.
+
+\n\nTo read more:
+\nhttp://variety.com/2017/film/box-office/box-office-thor-ragnorok-express-daddys-home-2-1202612288/
+
+\n\nMarvel’s god of thunder has reached a new milestone at the box office.
+
+\n\nThor: Ragnarok passed the $500 million mark worldwide on Wednesday, setting the film up to achieve even loftier goals over its next weekend at the box office.
+
+\n\nThor: Ragnarok is the 12th consecutive Marvel Cinematic Universe movie to cross the $500 million mark worldwide and the 14th film to do so out of all 17 films released in the Marvel Cinematic Universe so far.
+
+\n\nTo read more:
+\nhttp://comicbook.com/marvel/2017/11/11/thor-ragnarok-box-office-global/</string>
+    <string name="case6a">I remember that u like news from bola.com, so this is from bola.com
+
+\n\nPelatih Timnas Indonesia, Luis Milla, memanggil 33 pemain yang akan menjalani tiga laga uji coba pada 16, 18, dan 25 November 2017. Selain memanggil pemain-pemain Timnas Indonesia U-23 dan senior, Luis Milla juga memanggil tiga pemain Timnas Indonesia U-19.
+
+\n\nTiga pemain dari Timnas U-19 itu, yakni Muhammad Luthfi Kamal Baharsyah, Muhammad Rafli Mursalim, dan Egy Maulana Vikri. Pelatih asal Spanyol itu juga memanggil delapan pemain senior, yaitu Andritany Ardhiyasa, Fachruddin Aryanto, Ahmad Jufriyanto, Muhammad Taufiq, Bayu Pradana, Andik Vermansah, Boaz Solossa, dan Ilija Spasojevic.
+
+\n\nRead more:
+\nhttp://www.bola.com/indonesia/read/3159115/luis-milla-panggil-33-pemain-untuk-memperkuat-timnas-indonesia</string>
+    <string name="case6b">PSSI telah resmi merilis 33 nama pemain untuk tiga partai uji coba internasional timnas Indonesia, melawan Suriah U-23 dan Guyana, yang akan dilaksanakan pada bulan November ini, di Stadion Wibawa Mukti.
+
+\n\nSesuai yang pernah dinyatakan pelatih timnas Indonesia Luis Milla beberapa waktu lalu, ada beberapa wajah baru yang dipanggil untuk memperkuat tim Merah-Putih untuk tiga partai uji coba tersebut.
+
+\n\nDari daftar yang telah dirilis, terdapat beberapa pemain timnas U-19 seperti Egy Maulana Vikri, Rafli Mursalim dan Luthfi Kamal. Sementara nama anyar lainnya adalah Ilija Spasojevic dan Muhammad Arfan.
+
+\n\nRead more:
+\nhttp://www.goal.com/id/berita/33-pemain-timnas-indonesia-untuk-lawan-suriah-u-23-guyana/740vfb64i5i3za2r1q7vkkfm</string>
     <string name="case6c">Hi, here\'s a daily news update for you. I know that you are a fan of the walking dead
 
 \n\nThe Walking Dead season eight is off to a very rough start. Three weeks into the season, the show has seen notably low viewership numbers as well as a ratings low on review score aggregator Rotten Tomatoes. In fact, last Sunday\'s episode, "Monsters," is the lowest rated episode three in the series\' history, sitting at a rotten 52%.
 
 \n\nRead more:
 \nhttp://www.denofgeek.com/us/tv/the-walking-dead/268803/the-walking-dead-season-8s-ratings-continue-to-decline</string>
+    <string name="case7a">Faizal Syamsul Bahri, pengusaha muda Kota Bandung, siap berkontestasi di Pilkada Kota Bandung 2018 mendatang.
+\n\nMeski baru di kancah politik, Faizal yang merupakan menantu dari Wakil Ketua DPRD DKI Jakarta, Abraham Lunggana ( Haji Lulung) tersebut mengaku siap bertarung bersama politisi senior lain.
+\n\n"Meski latar belakang saya pengusaha, saya banyak belajar politik kepada sejumlah tokoh, khususnya kepada mertua saya Haji Lulung. Saya belajar banyak dari beliau," ucap Faizal saat ditemui di Jalan Buahbatu, Bandung, Jumat (10/11/2017).
+
+\n\nRead more:
+\nhttp://www.tribunnews.com/metropolitan/2017/11/11/menantu-haji-lulung-siap-bertarung-pilkada-kota-bandung-2018</string>
+    <string name="case7b">Okay, I\'ll remember that</string>
+    <string name="case7c">Akhir-akhir ini banyak pengguna media sosial yang menyoroti penggunaan kalimat \'Turn Back Quran\' yang terpampang sebagai nama suatu acara. Sejumlah pihak menilai rangkaian kata bahasa Inggris tersebut salah dan menimbulkan makna negatif. SMK Negeri 6 Kota Bandung meminta maaf dan menjelaskan duduk persoalannya.
+
+\n\nFrasa \'turn back\' memang sedang ramai digunakan akhir-akhir ini. Berawal dari \'Turn Back Crime\' untuk melawan tindak kriminal, yang dipopulerkan Interpol dan digunakan Ditkrikum Polda Metro Jaya. Ada pula kampanye \'Turn Back Hoax\' untuk melawan hoax. Frasa \'Turn Back Quran\' pun menjadi sorotan karena dianggap memiliki makna yang justru menjatuhkan.
+
+\n\nRead more:
+\nhttps://news.detik.com/berita-jawa-barat/d-3659463/smkn-6-bandung-minta-maaf-dan-jelaskan-soal-turn-back-quran</string>
+    <string name="case8a">Wakil Gubernur DKI Jakarta Sandiaga Uno ingin menggalakkan wisata syariah atau halal tourism di Jakarta.
+
+\n\nMenurutnya, wisata syariah itu sangat memungkinkan untuk diterapkan karena sudah ada sejumlah hotel syariah yang menggunakan sistem manajemen dan operasionalnya berbasis pada syariat Islam di Jakarta.
+
+\n\nApalagi, kata Sandi, halal tourism sedang booming di London, Tokyo, Seoul. "Kita harus kembangkan di Jakarta, jangan mau ketinggalan," kata Sandi, Kamis (2/11) silam.
+
+\n\nRead more:
+\nhttps://www.cnnindonesia.com/nasional/20171111182503-20-255016/mempertanyakan-konsep-wisata-syariah-di-jakarta/
+
+\n\nAkan pergi ke mana Anda akhir pekan ini? Mungkin Anda bisa mencoba perjalanan yang satu ini. Ternyata di Jakarta tidak semuanya serba mahal. Anda bisa pergi jalan-jalan di Jakarta hanya dengan membawa uang Rp 100 ribu, plus mencicipi kuliner khas Jakarta. Perjalanan pertama Anda bisa menuju kawasan Kota Tua yang terletak dekat dengan stasiun Jakarta Kota.
+
+\n\nAnda bisa menggunakan commuter line atau KRL untuk mencapai stasiun Jakarta Kota dengan membayar tarif kereta sekitar Rp 3.000, tergantung dari mana Anda naik.
+
+\n\nRead more:
+\nhttp://www.tribunnews.com/travel/2017/11/11/wisata-murah-meriah-di-jakarta-modalnya-cuma-rp100-ribu-lo-di-sini-lo-tempatnya</string>
+    <string name="case8b">Okay, got it</string>
+    <string name="case8c">Akan pergi ke mana Anda akhir pekan ini? Mungkin Anda bisa mencoba perjalanan yang satu ini. Ternyata di Jakarta tidak semuanya serba mahal. Anda bisa pergi jalan-jalan di Jakarta hanya dengan membawa uang Rp 100 ribu, plus mencicipi kuliner khas Jakarta. Perjalanan pertama Anda bisa menuju kawasan Kota Tua yang terletak dekat dengan stasiun Jakarta Kota.
+
+\n\nAnda bisa menggunakan commuter line atau KRL untuk mencapai stasiun Jakarta Kota dengan membayar tarif kereta sekitar Rp 3.000, tergantung dari mana Anda naik.
+
+\n\nRead more:
+\nhttp://www.tribunnews.com/travel/2017/11/11/wisata-murah-meriah-di-jakarta-modalnya-cuma-rp100-ribu-lo-di-sini-lo-tempatnya</string>
+    <string name="case10a">I know that you like Raisa, so this is for you
+
+\n\nDua penyanyi Raisa dan Vina Panduwinata akan menggelar konser di Hotel Tentrem Yogyakarta, pada 31 Desember 2017 mendatang. Tampil di malam tahun baru ternyata sangat spesial bagi Raisa.
+
+\n\nPasalnya, dirinya akan menadapatkan energi baru dari penonton ketika tampil di malam pergantian tahun. Seperti diketahui, acara pergantian tahun kerap disambut meriah oleh masyarakat.
+
+\n\nDalam konser tersebut, rencananya Raisa akan membawakan kurang lebih 10 lagu. Nantinya, lagu-lagu tersebut akan diransemen yang lebih baru.
+
+\n\nRead more:
+\nhttps://musik.kapanlagi.com/berita/rayakan-pergantian-tahun-raisa-bakal-liburan-ke-yogyakarta-e21d82.html
+
+\n\nPenyanyi Raisa Andriana juga turut hadir dalam resepsi pernikahan Kahiyang dan Bobby yang digelar Rabu (8/11) malam di Graha Saba Buana, Solo. Raisa yang tampak datang sendiri itu mengaku terkesan dengan pernikahan putri Presiden Joko Widodo itu.
+
+\n\n“Seru, ke sini terus melihat [pernikahan] adat Jawa. Bu Iriana, anak-anaknya, juga bapak ketemu, semua seru pokoknya,” kata Raisa yang datang dengan balutan busana bernuansa merah.
+
+\n\nTak luput, Raisa yang belum lama ini baru membangun rumah tangga dengan Hamish Daud pun menyampaikan pesan khususnya kepada Kahiyang dan Bobby.
+
+\n\nRead more:
+\nhttps://www.cnnindonesia.com/hiburan/20171109074406-234-254483/raisa-dan-ashanti-ikut-kirim-doa-ke-kahiyang-bobby/</string>
+    <string name="case10b">I\'m sorry but I don\'t know what you like about. Can you tell me?</string>
+    <string name="case10c">Okay, I\'ll remember that</string>
+    <string name="tutorial">Hello, I am SeeNews bot. I can help you in many thing about reading news.
+
+    \n\nYou can ask me to tell you about something, or you can also ask me to search news about something. I can give you more news if you ask me to search it.
+
+    \n\nIf you\'re not interested in something, I can show you popular news if you want?
+
+    \n\nOh yeah, if you prefer a specific news source, just tell me and I can remember it. I can also remember what topic you like and don\'t like.</string>
 
 </resources>
